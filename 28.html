@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style=" display: flex;" id="main">
+        <!-- <input style="margin-top: 10%;" type="button" value="click" id="btn"> -->
+    </div>
+
+    <script>
+        var main = document.getElementById("main")
+        var array = [];
+        var obj1 = {
+            Name: "Boopathi",
+            Age: 23
+        }
+        var obj2 = {
+            Name: "Thara",
+            Age: 20
+        }
+        var obj3 = {
+            Name: "yash",
+            Age: 23
+        }
+        var obj4 = {
+            Name: "abi",
+            Age: 21
+        }
+        array.push(obj1, obj2, obj3, obj4)
+
+        array.map(value => {
+            var Subdiv = document.createElement("div")
+            var Para = document.createElement("p")
+            var Para1 = document.createElement("p")
+    
+            Para.innerText =" Name :"+value.Name;
+            Para1.innerText = "Age:"+value.Age;
+            Subdiv.appendChild(Para)
+            Subdiv.appendChild(Para1)
+            Subdiv.style.width="10vw"
+            Subdiv.style.border = "solid 1px"
+            var col=Math.floor((Math.random()*1000000)+1);
+            Subdiv.style.backgroundColor="#"+col;
+            main.appendChild(Subdiv)
+           
+        })
+
+
+    </script>
+</body>
+
+</html>

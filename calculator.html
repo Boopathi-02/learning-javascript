@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    #calculator {
+      border: 1px solid #ccc;
+      width: 240px;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: rgb(54, 53, 53);
+    }
+
+    .output {
+      font-size: 20px;
+      margin-bottom: 10px;
+      
+    }
+    .inp{
+      width: 200px;
+    }
+
+    input {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="calculator">
+    <div class="output"><input type="text" id="disp" class="inp"></div>
+    <input type="button" value="c"onclick="disp.value=''">
+    <input type="button" value="D" onclick="disp.value=disp.value.slice(0,-1)">
+    <input type="button" value="=" onclick="disp.value=eval(disp.value)">
+    <input type="button" value="1" onclick="disp.value+='1'">
+    <input type="button" value="2"onclick="disp.value+='2'">
+    <input type="button" value="3" onclick="disp.value+='3'">
+    <input type="button" value="4" onclick="disp.value+='4'">
+    <input type="button" value="5" onclick="disp.value+='5'">
+    <input type="button" value="6" onclick="disp.value+='6'">
+    <input type="button" value="7" onclick="disp.value+='7'">
+    <input type="button" value="8" onclick="disp.value+='8'">
+    <input type="button" value="9" onclick="disp.value+='9'">
+    <input type="button" value="0" onclick="disp.value+='0'">
+    <input type="button" value="00" onclick="disp.value+='00'">
+    <input type="button" value="+" onclick="disp.value+='+'">
+    <input type="button" value="-" onclick="disp.value+='-'">
+    <input type="button" value="*" onclick="disp.value+='*'">
+    <input type="button" value="/" onclick="disp.value+='/'">
+  </div>
+
+</body>
+
+</html>

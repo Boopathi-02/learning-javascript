@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="height: 20vh; width: 20vw;background-color: rgba(0, 0, 0, 0); text-align: center;">
+        <input style="margin-top: 10%;" type="button" value="click" id="btn">
+    </div>
+
+    <script>
+        var OBJECT={
+            Name1:"Boopathi ",
+            Name2:"Geetha ",
+            Name3:"sathya ",
+            Name4:"varadha ",
+            Name5:"saravanan "
+        } 
+       var a=({Name1,Name2,Name3,Name4,Name5})=>{
+            alert(Name1+Name2+Name3+Name4+Name5)
+        }
+
+        var Btn=document.getElementById("btn")
+        Btn.setAttribute("onclick","a(OBJECT)")
+
+
+       
+
+
+
+
+    </script>
+</body>
+</html>

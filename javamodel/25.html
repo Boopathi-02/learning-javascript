@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="full">
+
+        <label>name:</label><input type="text" id="data1"><br><br>
+        <label>F.name:</label><input type="text" id="data2"><br><br>
+        <label>M.name:</label><input type="text" id="data3"><br><br>
+        <label>DOB:</label><input type="date" id="data4"><br><br>
+        <label>Address:</label><input type="text" id="data5"><br><br>
+        <button value="submit" id="button">submit</button>
+    </div>
+    <script>
+        var userName = document.getElementById("data1")
+        var userFName = document.getElementById("data2")
+        var userMName = document.getElementById("data3")
+        var userDOB = document.getElementById("data4")
+        var userAddress = document.getElementById("data5")
+
+        var array = [];
+
+        function boo() {
+            if (userName.value == "") {
+                alert("enter your name")
+            }
+            else if (userFName.value == "") {
+                alert("enter your password")
+            }
+            else if (userMName.value == "") {
+                alert("enter your email")
+            }
+            else if (userDOB.value == "") {
+                alert("enter your phno")
+            }
+            else {
+                alert("submiited")
+                boop();
+            }
+        }
+        var btn = document.getElementById("button")
+        btn.addEventListener("click", boo)
+
+
+        let boop = () => {
+            var UName = userName.value
+            var FName = userFName.value
+            var MName = userMName.value
+            var DOB = userDOB.value
+            var Address = userAddress.value
+
+            var det = new Object();
+            det.username = UName
+            det.userfname = FName
+            det.usermname = MName
+            det.userdob = DOB
+            det.useradd = Address
+            // var full = [...UName, ...FName, ...DOB, ...MName]
+            array.push(det)
+            console.log(array)
+
+
+
+            userName.value = ''
+            userFName.value = ''
+            userMName.value = ''
+            userDOB.value = ''
+            userAddress.value = ''
+
+        }
+
+
+    </script>
+</body>
+
+</html>

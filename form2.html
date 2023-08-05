@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+</head>
+
+<body>
+    <div class="full">
+        <h1>NAME</h1>
+        <input type="text" id="name">
+        <h1>PASSWORD</h1>
+        <input type="password" id="pass">
+        <h1>EMAIL</h1>
+        <input type="email" id="email">
+        <h1>PHONENO</h1>
+        <input type="number" id="phone">
+        <input type="button" id="submit" value="SUBMIT">
+
+
+
+        <script>
+            var userName = document.getElementById("name")
+            var userPass = document.getElementById("pass")
+            var userEmail = document.getElementById("email")
+            var userPhone = document.getElementById("phone")
+            var BTN = document.getElementById("submit")
+            BTN.addEventListener("click", boop)
+
+            function boop() {
+                
+                if (userName.value == "") {
+                    alert("enter your name")
+                }
+                else if (userPass.value == "") {
+                    alert("enter your password")
+                }
+                else if (userEmail.value == "") {
+                    alert("enter your email")
+                }
+                else if (userPhone.value == "") {
+                    alert("enter your phno")
+                }
+                else {alert("submiited")}
+            }
+
+        </script>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+.full{
+    height: 70vh;
+    width: 70vw;
+    background-image: url(https://wallpaperaccess.com/full/42331.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.num1{
+    height: 10vh;
+    width: 10vw;
+    background-color: rgb(251, 250, 249);
+    text-align: center;
+}
+.ICON{
+    height: 10vh;
+    width: 10vw;
+    
+    text-align: center;
+}
+.ICON>i{
+    font-size: xx-large;
+    margin-top: 10%;
+}
+.num2{
+    height: 10vh;
+    width: 10vw;
+    background-color:rgb(251, 252, 250);
+    text-align: center;
+}
+.ICON2{
+    height: 10vh;
+    width: 10vw;
+    text-align: center;
+}
+.ICON2>i{
+    font-size: xx-large;
+    margin-top: 10%;
+}

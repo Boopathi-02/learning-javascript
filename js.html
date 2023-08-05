@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="full">
+
+        <label>name:</label><input type="text" id="data1"><br><br>
+        <label>F.name:</label><input type="text" id="data2"><br><br>
+        <label>M.name:</label><input type="text" id="data3"><br><br>
+        <label>DOB:</label><input type="date" id="data4"><br><br>
+        <label>Address:</label><input type="text" id="data5"><br><br>
+        <label>gender:</label>
+        <input type="radio" id="male" value="male" name="gender"><label for="">male</label>
+        <input type="radio" id="female" name="gender" value="female"><label for="">female</label><br><br>
+        <label>phno</label><input type="number" id="data7">
+        <button onclick="bio()" value="submit" id="button">submit</button>
+    </div>
+
+    <script>
+        var main = document.getElementById("full");
+        main.style.height="300px";
+        main.style.width="300px";
+        main.style.backgroundColor="red"
+        main.style.borderRadius="10px"
+        main.style.padding="10px"
+        var btn=document.getElementById("button");
+        btn.style.backgroundColor="yellow"
+        btn.style.borderRadius="3px"
+        btn.style.border="0px solid"
+
+
+        function bio() {
+
+            var detial = document.getElementById("data1").value;
+            var detial1 = document.getElementById("data2").value;
+            var detial2 = document.getElementById("data3").value;
+            var detial3 = document.getElementById("data4").value;
+            var detial4 = document.getElementById("data5").value;
+            //  var detial5=document.getElementById("gender");
+            var detial5 = document.querySelector('input[name="gender"]:checked');   
+            var detial7=document.getElementById("female").value;
+            var detial6 = document.getElementById("data7").value;
+
+            var nam = {
+                name: detial,
+                fathername: detial1,
+                mothername: detial2,
+                dateofbirth: detial3,
+                add: detial4,
+                gender:detial5,
+                phno: detial6
+            }
+            console.log(nam)
+
+        }
+    </script>
+
+</body>
+
+</html>

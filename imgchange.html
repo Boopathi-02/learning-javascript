@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="display: flex; justify-content: center; ">
+
+    <div id="full">
+        <div id="full2">
+
+        </div>
+        <div id="full3">
+
+        </div>
+        <div id="btnfull">
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var fulldiv = document.getElementById("full")
+        fulldiv.style.width = "700px";
+        fulldiv.style.height = "500px";
+        fulldiv.style.marginTop = "30px"
+        fulldiv.style.backgroundImage = "url(https://img.freepik.com/free-vector/frightening-halloween-realistic-background_33099-1052.jpg)"
+        fulldiv.style.backgroundSize = "cover"
+
+
+        var fulldiv2 = document.getElementById("btnfull")
+        fulldiv2.style.marginTop = "50px"
+        fulldiv2.style.marginLeft = "200px"
+
+
+
+        var fulldiv1 = document.getElementById("full2")
+
+
+
+        var secdiv = document.createElement("img")
+        secdiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png";
+        secdiv.style.width = "100px";
+        secdiv.style.height = "200px";
+        secdiv.style.marginLeft = "300px"
+
+
+
+
+        var btn1 = document.createElement("button")
+        btn1.innerText = "ON"
+        btn1.style.height = "30px"
+        btn1.style.width = "50px"
+        btn1.style.backgroundColor = "green"
+        btn1.setAttribute("onclick", "boop()")
+        btn1.style.border="0px"
+        btn1.style.borderRadius="5px"
+
+
+        var btn2 = document.createElement("button")
+        btn2.innerText = "OFF"
+        btn2.style.height = "30px"
+        btn2.style.width = "50px"
+        btn2.style.backgroundColor = "red"
+        btn2.style.marginLeft = "200px"
+        btn2.style.border="0px"
+        btn2.style.borderRadius="5px"
+
+        btn2.setAttribute("onclick", "boop1()")
+
+        // _______________________________________________________________________________________________________
+        var fulldiv3 = document.getElementById("full3")
+
+
+        var thirddiv = document.createElement("img")
+         thirddiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png";
+         thirddiv.style.width = "150px";
+         thirddiv.style.height = "200px";
+         thirddiv.style.marginLeft = "260px"
+
+
+        fulldiv1.appendChild(secdiv);
+        fulldiv2.appendChild(btn1);
+        fulldiv2.appendChild(btn2);
+        fulldiv3.appendChild(thirddiv);
+
+
+
+        function boop() {
+            secdiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png"
+            thirddiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png";
+
+
+        }
+
+        function boop1() {
+            secdiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png"
+            thirddiv.src = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png";
+
+        }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

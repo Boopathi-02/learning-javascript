@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="display: flex; justify-content: center;">
+    <div id="main">
+
+    </div>
+
+
+    <script>
+        var maindiv = document.getElementById("main");
+        maindiv.style.width = "500px";
+        maindiv.style.height = "auto";
+        maindiv.style.backgroundColor = "red";
+        maindiv.style.padding="10px";
+
+
+
+        var d1 = document.createElement("h3");
+        d1.innerText = "YOUR Name:";
+        var d1i = document.createElement("input");
+        d1i.type = "text";
+
+        var d2 = document.createElement("h3");
+        d2.innerText = "Father Name:";
+        var d2i = document.createElement("input");
+        d2i.type = "text";
+
+        var d3 = document.createElement("h3");
+        d3.innerText = "Mother Name:";
+        var d3i = document.createElement("input");
+        d3i.type = "text";
+
+        var d4 = document.createElement("h3");
+        d4.innerText = "DOB:";
+        var d4i = document.createElement("input");
+        d4i.type = "date";
+
+        var d5 = document.createElement("h3");
+        d5.innerText = "ADDRESS:";
+        var d5i = document.createElement("input");
+        d5i.type = "text";
+
+        var d6 = document.createElement("h3");
+        d6.innerText = "PH.NO:";
+        var d6i = document.createElement("input");
+        d6i.type = "number";
+        var btn = document.createElement("input")
+        btn.type = "button";
+        btn.value = "submit";
+        btn.setAttribute("onclick","Boop()");
+
+
+
+        maindiv.appendChild(d1);
+        maindiv.appendChild(d1i);
+        maindiv.appendChild(d2);
+        maindiv.appendChild(d2i);
+        maindiv.appendChild(d3);
+        maindiv.appendChild(d3i);
+        maindiv.appendChild(d4);
+        maindiv.appendChild(d4i);
+        maindiv.appendChild(d5);
+        maindiv.appendChild(d5i);
+        maindiv.appendChild(d6);
+        maindiv.appendChild(d6i);
+        maindiv.appendChild(btn);
+        
+         function Boop() {
+             var det = d1i.value
+             var det1 = d2i.value
+             var det2 = d3i.value
+             var det3 = d4i.value
+             var det4 = d5i.value
+             var det5 = d6i.value
+             var out = document.createElement("h3");
+             out.innerText="OUTPUT";
+             var p1 = document.createElement("p");
+             p1.innerText= "NAME :"+ det ;
+             var p2 = document.createElement("p");
+             p2.innerText="F.NAME :" + det1 ;
+             var p3 = document.createElement("p");
+             p3.innerText="M.name :" + det2;
+             var p4 = document.createElement("p");
+             p4.innerText="DOB :" + det3;
+             var p5 = document.createElement("p");
+             p5.innerText="ADDRESS :" + det4;
+             var p6 = document.createElement("p");
+             p6.innerText="PHNO :" + det5;
+
+             maindiv.appendChild(out);
+             maindiv.appendChild(p1);
+             maindiv.appendChild(p2); 
+             maindiv.appendChild(p3);
+             maindiv.appendChild(p4);
+             maindiv.appendChild(p5);
+             maindiv.appendChild(p6);
+
+
+
+
+             
+         }
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

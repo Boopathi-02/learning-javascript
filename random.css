@@ -1,0 +1,14 @@
+.full{
+    height: 80vh;
+    width: 50%;
+    border: 1px solid;
+    margin-left: 20%;
+}
+.btn{
+    margin-top: 50%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    height: 10%;
+
+}

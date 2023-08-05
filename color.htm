@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="13.css">
+</head>
+
+<body>
+    <div id="full" class="full">
+        <h1 id="NAME"></h1>
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2017/09/13/12/36/man-2745393_1280.png" style="width: 50%;height: 50%; margin-left: 20%; ">
+        </div>
+        <div class="btn">
+
+            <input type="button" value="FIRSTCOLOR" id="firstcolor">
+            <input type="button" value="SECONDCOLOR" id="secondcolor">
+            <input type="button" value="THIRDCOLOR" id="thirdcolor">
+            <input type="button" value="randomCOLOR" id="randomcolor">
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var colorname=document.getElementById("NAME")
+        colorname.style.marginLeft="40%"
+        colorname.style.marginTop="10px"
+
+
+        var fulldiv = document.getElementById("full")
+        fulldiv.style.backgroundColor="black"
+
+        var btn1=document.getElementById("firstcolor")
+        btn1.setAttribute("onclick","boo()")
+        btn1.style.padding="px"
+
+        var btn2=document.getElementById("secondcolor")
+        btn2.setAttribute("onclick","boop()")
+        btn2.style.padding="px"
+
+        var btn3=document.getElementById("thirdcolor")
+        btn3.setAttribute("onclick","boopa()")
+        btn3.style.padding="px"
+
+        var btn4=document.getElementById("randomcolor")
+        btn4.setAttribute("onclick","boopat()")
+        
+
+
+
+
+
+        function boo(){
+            fulldiv.style.backgroundColor="red";
+            colorname.innerText="RED"
+        }
+        function boop(){
+            fulldiv.style.backgroundColor="yellow";
+            colorname.innerText="YELLOW"
+        }
+        function boopa(){
+            fulldiv.style.backgroundColor="blue";
+            colorname.innerText="BLUE"
+        }
+        function boopat(){
+            var col=Math.floor((Math.random()*1000000)+1);
+            fulldiv.style.backgroundColor="#"+col;
+            colorname.innerText="#"+col
+            
+        }
+
+        
+        
+
+
+    </script>
+</body>
+
+</html>

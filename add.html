@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="add.css">
+    <script src="https://kit.fontawesome.com/2df9819f1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="full">
+        <div class="num1">
+            <h1 id="one"></h1>
+        </div>
+        <div class="ICON"><i class="fa-solid fa-plus"></i> </div>
+        <div class="num2">
+            <h1 id="two"></h1>
+        </div>
+        <div class="ICON2"> <i class="fa-solid fa-equals"></i></div>
+        <input type="text" id="in">
+
+        <button id="sub">SUBMIT</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var TWo = document.getElementById("two")
+        var ONE = document.getElementById("one")
+        var BTN = document.getElementById("sub")
+
+
+        var ran2 = Math.floor((Math.random() * 10) + 1)
+        TWo.innerText = ran2
+        var ran1 = Math.floor((Math.random() * 10) + 1)
+        ONE.innerText = ran1
+
+        BTN.setAttribute("onclick", "boo()")
+
+        var Gvalue = document.getElementById("in")
+        var val = Gvalue.value
+
+        
+
+        function boo() {
+            var sum = parseInt(TWo.innerText) +parseInt(ONE.innerText);
+            if (sum == Gvalue.value) {
+                alert("ANSWER IS truee")
+                Gvalue.value = '';
+                var ran2 = Math.floor((Math.random() * 10) + 1)
+                TWo.innerText = ran2
+                var ran1 = Math.floor((Math.random() * 10) + 1)
+                ONE.innerText = ran1
+            }
+            else {
+                alert("ANSWER IS false")
+                Gvalue.value = '';
+                var ran2 = Math.floor((Math.random() * 10) + 1)
+                TWo.innerText = ran2
+                var ran1 = Math.floor((Math.random() * 10) + 1)
+                ONE.innerText = ran1
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

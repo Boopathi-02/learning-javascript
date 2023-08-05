@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="12.css">
+</head>
+
+<body>
+    <div id="tit" class="tit">
+
+    </div>
+    <div id="full" class="full ">
+
+        <div id="one" class="one">
+            <img src="" alt="" id="imgt">
+
+        </div>
+        <div id="two" class="two">
+            <h1 id="HEAD"></h1>
+            <ul id="ullist">
+                
+                <li></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        var firstdiv = document.getElementById("tit")
+        firstdiv.style.textAlign = "center"
+
+        var title = document.createElement("h1")
+        title.innerText = "TOMATO PASTA"
+        firstdiv.appendChild(title)
+
+
+        var hotel = {
+            img: "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/recipe-img.png",
+            ingredients: ["Pasta", "Oil", "Onions", "Salt", "Tomato Pasta Sauce", "Cheese"]
+
+        };
+
+
+        var onediv = document.getElementById("imgt")
+        onediv.src = hotel.img
+        onediv.style.width = "100%"
+        onediv.style.height = "90%"
+
+        var twodiv = document.getElementById("two")
+        twodiv.style.textAlign = "center"
+
+
+        var ing = document.getElementById("HEAD")
+        ing.innerText = "INGREDIENTS"
+        // twodiv.appendChild(ing);
+
+
+
+        var unorderli = document.getElementById("ullist")
+        var space = "";
+        var food = hotel.ingredients
+        var len = food.length
+
+        for (var i = 0; i < len; i++) {
+            space += food[i] + "<br>"
+        }
+        unorderli.innerHTML = space
+
+        unorderli.style.fontSize="larger"
+        
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

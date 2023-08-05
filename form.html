@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div class="full">
+        <input type="text" id="val">
+        <input type="button" value="submit" id="btn">
+        <div id="two">
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        var val1 = document.getElementById("val")
+        var two = document.getElementById("two")
+        var btn = document.getElementById("btn")
+        function boo() {   
+            var valu=val1.value
+            var pa = document.createElement("p")
+            pa.innerText=valu
+            two.appendChild(pa);
+            val1.value = '';
+
+        }
+
+        btn.addEventListener("click", boo)
+
+
+
+
+
+    </script>
+</body>
+
+</html>

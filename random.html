@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css">
+</head>
+<body>
+    <div id="full" class="full">
+        <h1 id="NAME"></h1>
+       
+        <div class="btn">
+            <input type="button" value="randomCOLOR" id="randomcolor">
+
+        </div>
+    </div>
+
+    <script>
+
+        var colorname=document.getElementById("NAME")
+        colorname.style.marginLeft="40%"
+        colorname.style.marginTop="10px"
+
+        var fulldiv = document.getElementById("full")
+        fulldiv.style.backgroundColor="grey"
+        
+
+        var btn4=document.getElementById("randomcolor")
+        btn4.setAttribute("onclick","boopat()")
+        
+
+
+
+
+
+       
+        
+        function boopat(){
+            var col=Math.floor((Math.random()*1000000)+1);
+            fulldiv.style.backgroundColor="#"+col;
+            colorname.innerText="#"+col
+            
+        }
+
+        
+        
+
+
+    </script>
+    
+</body>
+</html>
